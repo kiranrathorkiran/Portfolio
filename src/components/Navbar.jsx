@@ -38,12 +38,12 @@ export default function Navbar() {
 
         <div className='container mx-auto flex flex-col md:flex-row justify-between items-center'>
         <div className='text-2xl font-bold mb-4 md:mb-0'>
-      Kiran
+      KIRAN RATHOR
         </div>
 
         <div className='flex flex-col md:flex-row items-center md:space-x-6'>
           <a href="#home" className='py-2 px-4 hover:text-gray-400 dark:hover:text-gray-300'>Home</a>
-          <a href="#about" className='py-2 px-4 hover:text-gray-400 dark:hover:text-gray-300'>About Me</a>
+          <a href="#about" className='py-2 px-4 hover:text-gray-400 dark:hover:text-gray-300'>AboutMe</a>
           <a href="#education" className='py-2 px-4 hover:text-gray-400 dark:hover:text-gray-300'>Education</a>
           <a href="#skills" className='py-2 px-4 hover:text-gray-400 dark:hover:text-gray-300'>Skills</a>
           <a href="#service" className='py-2 px-4 hover:text-gray-400 dark:hover:text-gray-300'>Experience</a>

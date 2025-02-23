@@ -1,4 +1,4 @@
-import UcfImage from '../assets/Ucf.png'; // Import the UCF image
+import UcfImage from '../assets/Vulogo.jfif'; // Import the UCF image
 
 const education = [
   {

@@ -13,7 +13,7 @@ import oopImage from '../assets/oop.png'; // Object Oriented Programming image
 const skills = [
   { id: 1, name: "Python", icon: <FaPython size={40} />, proficiency: 90 },
   { id: 2, name: "Java", icon: <FaJava size={40} />, proficiency: 75 },
-  { id: 3, name: "Java", icon: <FaPhp size={40} />, proficiency: 75 },
+  { id: 3, name: "PHP", icon: <FaPhp size={40} />, proficiency: 80 },
   { id: 4, name: "Data Structures", icon: <img src={dsImage} alt="Data Structures" className="w-10 h-10" />, proficiency: 85 },
   { id: 5, name: "Algorithms", icon: <img src={algorithmsImage} alt="Algorithms" className="w-10 h-10" />, proficiency: 80 },
   { id: 6, name: "HTML/CSS", icon: [<FaHtml5 key="html" size={40} />, <FaCss3 key="css" size={40} />], proficiency: 85 },

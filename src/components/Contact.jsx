@@ -16,7 +16,7 @@ const Contact = () => {
         <div className="flex flex-col md:flex-row md:space-x-12">
           <div className="flex-1 mb-8 md:mb-0">
             <h3 className='text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 mb-4'>Let&apos;s Talk</h3>
-            <p className="text-base md:text-lg">I&apos;m open to discussing software development projects or partnership opportunities and eager to build a strong professional network. Let&apos;s connect and explore how we can collaborate!</p>
+            <p className="text-base md:text-lg">I&apos;m open to discussing web development projects or partnership opportunities and eager to build a strong professional network. Let&apos;s connect and explore how we can collaborate!</p>
             <div className='mb-4 mt-8'>
                 <FaEnvelope className='inline-block text-green-400 mr-2' />
                 <a href="mailto:chandrashekarreddyv2001@gmail.com" className='hover:underline text-green-400'>
