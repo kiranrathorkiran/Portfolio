@@ -7,6 +7,10 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+ src/components/Achievements.jsx
+ src/components/Certifications.jsx
+ 
+
 node_modules
 dist
 dist-ssr

@@ -1,109 +1,40 @@
-import { useState } from 'react'
+import './App.css';
+import {useState,useEffect} from 'react'
+import About from './components/About';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import Hero from './components/Hero';
+import Navbar from './components/Navbar';
+import Projects from './components/Projects';
+import Service from './components/Service';
+import Education from './components/Education';
+import Skills from './components/Skills'; // Import Skills component
+// import Certifications from './components/Certifications'; // Import Certifications component
+// import Achievements from './components/Achievements'; // Import Achievements component
 
-import './App.css'
-import { TodoProvider } from './context'
-import { useEffect } from 'react'
-import TodoForm from './components/TodoForm'
-import Todoitem from './components/Todoitem'
+import {  useRef} from "react";
+
+
+
 function App() {
-  const [todos, settodos] = useState([])
+const divref=useRef(null);
+
   
-//add todo---------------------
-const addTodo=(todo)=>
-{
-settodos((prev)=>[{id:Date.now(),...todo},...prev])
-}
-//update todo---------------------
-const updateTodo=(id,todo)=>
-  {
-  settodos((prev)=>prev.map((prevtodo)=>(prevtodo.id===id?todo:prevtodo)))
-  }
-  //delete todo---------------------
-const deleteTodo=(id)=>
-  {
-  settodos((prev)=>prev.filter((todo)=> todo.id !== id))
-  }
-//complete todo---------------------
-const togglecomple=(id,todo)=>
-  {
-  settodos((prev)=>prev.map((prevtodo)=>prevtodo.id===id?{...prevtodo,completed: !prevtodo.completed}:prevtodo))
-  }
-//--------------------------clear all function------------------------
-
-const clearalltodos=()=>
-  { 
-    if(window.confirm("do you whant to clear all data")) {
-      localStorage.clear()
-
-   
-   window.location.reload();
-  }
-
-    
-  }
-
-
-useEffect(() => {
   
-  let todos=JSON.parse(localStorage.getItem("todos"))
-  
-
-  if(todos&&  todos.length>0)
-  {
-   
-settodos(todos)
-
-  }
-}, [])
-
-
-
-useEffect(() => {
-
- localStorage.setItem("todos",JSON.stringify(todos))
-}, [todos])
-
-
-
-
-
-
   return (
-    <TodoProvider value={{todos,addTodo,updateTodo,deleteTodo,togglecomple}}>
-
-    <div className="bg-[#172842] min-h-screen py-8">
-                <div className="w-full max-w-2xl mx-auto shadow-md rounded-lg px-4 py-3 text-white">
-                    <h1 className="text-2xl font-bold text-center mb-8 mt-2">Manage Your Todos</h1>
-                    <div className="mb-4"  >
-                        {/* Todo form goes here */} 
-                        <TodoForm/>
-                    </div>
-                    <div className="flex flex-wrap gap-y-3">
-                        {/*Loop and Add TodoItem here */ }
-                      
-                 {
-                          
-                        todos.map((todo)=>{
-                      
-                    
-                       return(
-                          <div  key={todo.id} className=' bg-black w-full'>
-                           
-                                <Todoitem todo={todo}/>   
-                          </div>
-                       )
-                          })}
-                    </div>
-                </div>
-                <button className='bg-[#f02626]  py-1    shadow-md rounded-lg px-3 ml-7  text-white' onClick={clearalltodos}>clear All</button>
-  
-             
-               
-            </div>
-    </TodoProvider>
-  )
+    <div ref={divref}>
+      <Navbar />
+      <Hero />
+      <About />
+      <Education />
+      <Skills /> {/* Add Skills section here */}
+      <Service />
+      <Projects />
+     
+      <Contact />
+      <Footer />
+    </div>
+  );
 }
 
-export default App
-
-
+export default App;
