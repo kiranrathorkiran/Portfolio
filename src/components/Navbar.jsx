@@ -46,10 +46,7 @@ export default function Navbar() {
           <a href="#about" className='py-2 px-4 hover:text-gray-400 dark:hover:text-gray-300'>AboutMe</a>
           <a href="#education" className='py-2 px-4 hover:text-gray-400 dark:hover:text-gray-300'>Education</a>
           <a href="#skills" className='py-2 px-4 hover:text-gray-400 dark:hover:text-gray-300'>Skills</a>
-          <a href="#service" className='py-2 px-4 hover:text-gray-400 dark:hover:text-gray-300'>Experience</a>
           <a href="#projects" className='py-2 px-4 hover:text-gray-400 dark:hover:text-gray-300'>Projects</a>
-          <a href="#Certifications" className='py-2 px-4 hover:text-gray-400 dark:hover:text-gray-300'>Certifications</a>
-          <a href="#achievements" className='py-2 px-4 hover:text-gray-400 dark:hover:text-gray-300'>Achievements</a>
           <a href="#contact" className='py-2 px-4 hover:text-gray-400 dark:hover:text-gray-300'>Contact</a>
         </div>
 
